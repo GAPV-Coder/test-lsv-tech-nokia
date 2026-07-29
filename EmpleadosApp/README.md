@@ -1,0 +1,1 @@
+# Documentación Test Full Stack (SQL Server + C#/.NET + Angular)
