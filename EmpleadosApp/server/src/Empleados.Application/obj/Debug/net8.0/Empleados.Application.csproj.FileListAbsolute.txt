@@ -1,0 +1,16 @@
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\Empleados.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\Empleados.Application.AssemblyInfoInputs.cache
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\Empleados.Application.AssemblyInfo.cs
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\Empleados.Application.csproj.CoreCompileInputs.cache
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\Empleados.Application.sourcelink.json
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\bin\Debug\net8.0\Empleados.Application.deps.json
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\bin\Debug\net8.0\Empleados.Application.dll
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\bin\Debug\net8.0\Empleados.Application.pdb
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\bin\Debug\net8.0\Empleados.Domain.dll
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\bin\Debug\net8.0\Empleados.Domain.pdb
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\Empleados.Application.csproj.AssemblyReference.cache
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\Empleado.B248136B.Up2Date
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\Empleados.Application.dll
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\refint\Empleados.Application.dll
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\Empleados.Application.pdb
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Application\obj\Debug\net8.0\ref\Empleados.Application.dll

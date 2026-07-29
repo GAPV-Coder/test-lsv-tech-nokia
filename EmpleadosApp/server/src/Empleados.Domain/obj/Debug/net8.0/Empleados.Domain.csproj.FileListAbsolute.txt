@@ -1,0 +1,12 @@
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\bin\Debug\net8.0\Empleados.Domain.deps.json
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\bin\Debug\net8.0\Empleados.Domain.dll
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\bin\Debug\net8.0\Empleados.Domain.pdb
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\obj\Debug\net8.0\Empleados.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\obj\Debug\net8.0\Empleados.Domain.AssemblyInfoInputs.cache
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\obj\Debug\net8.0\Empleados.Domain.AssemblyInfo.cs
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\obj\Debug\net8.0\Empleados.Domain.csproj.CoreCompileInputs.cache
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\obj\Debug\net8.0\Empleados.Domain.sourcelink.json
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\obj\Debug\net8.0\Empleados.Domain.dll
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\obj\Debug\net8.0\refint\Empleados.Domain.dll
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\obj\Debug\net8.0\Empleados.Domain.pdb
+D:\Desarrollo\Desarrollo_de_Software\Pruebas-Tecnicas\2026\LSV-Tech\test-lsv-tech\EmpleadosApp\server\src\Empleados.Domain\obj\Debug\net8.0\ref\Empleados.Domain.dll

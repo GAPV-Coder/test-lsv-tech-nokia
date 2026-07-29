@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desarrollo\\Desarrollo_de_Software\\Pruebas-Tecnicas\\2026\\LSV-Tech\\test-lsv-tech\\EmpleadosApp\\server\\src\\Empleados.Api\\Empreados.Domain\\Empleados.Domain.csproj",
+      "projectUniqueName": "d:\\Desarrollo\\Desarrollo_de_Software\\Pruebas-Tecnicas\\2026\\LSV-Tech\\test-lsv-tech\\EmpleadosApp\\server\\src\\Empleados.Domain\\Empleados.Domain.csproj",
       "projectName": "Empleados.Domain",
-      "projectPath": "D:\\Desarrollo\\Desarrollo_de_Software\\Pruebas-Tecnicas\\2026\\LSV-Tech\\test-lsv-tech\\EmpleadosApp\\server\\src\\Empleados.Api\\Empreados.Domain\\Empleados.Domain.csproj",
+      "projectPath": "d:\\Desarrollo\\Desarrollo_de_Software\\Pruebas-Tecnicas\\2026\\LSV-Tech\\test-lsv-tech\\EmpleadosApp\\server\\src\\Empleados.Domain\\Empleados.Domain.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Desarrollo\\Desarrollo_de_Software\\Pruebas-Tecnicas\\2026\\LSV-Tech\\test-lsv-tech\\EmpleadosApp\\server\\src\\Empleados.Api\\Empreados.Domain\\obj\\",
+      "outputPath": "d:\\Desarrollo\\Desarrollo_de_Software\\Pruebas-Tecnicas\\2026\\LSV-Tech\\test-lsv-tech\\EmpleadosApp\\server\\src\\Empleados.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
