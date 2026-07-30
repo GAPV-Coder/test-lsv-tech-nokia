@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="empleadosApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Empleados</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f5f6fa; }
+    .card { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.1); max-width: 900px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 8px 10px; border-bottom: 1px solid #e0e0e0; text-align: left; }
+    th { background: #1f4e78; color: #fff; }
+    input, select { padding: 6px 8px; margin: 4px 6px 4px 0; }
+    button { padding: 6px 12px; cursor: pointer; }
+    .eliminar { background: #c0392b; color: #fff; border: none; border-radius: 4px; }
+    .loading { color: #888; font-style: italic; }
+  </style>
+</head>
+<body ng-controller="EmpleadosCtrl">
+
+  <div class="card">
+    <h2>Empleados</h2>
+    <input type="text" ng-model="busqueda" placeholder="Buscar por nombre...">
+
+    <p class="loading" ng-if="cargando">Cargando empleados...</p>
+
+    <table ng-if="!cargando">
+      <tr>
+        <th>Documento</th><th>Nombres</th><th>Apellidos</th><th>Cargo</th><th>Salario</th><th></th>
+      </tr>
+      <!-- BUG 2 corregido: el filtro usaba "textoBusqueda" (nunca -->
+      <!-- definido), en vez de "busqueda" (la variable real ligada -->
+      <!-- al input de arriba con ng-model). -->
+      <tr ng-repeat="emp in empleados | filter: busqueda">
+        <td>{{ emp.documento }}</td>
+        <td>{{ emp.nombres }}</td>
+        <td>{{ emp.apellidos }}</td>
+        <td>{{ emp.cargo }}</td>
+        <td>{{ emp.salario | currency:'$':0 }}</td>
+        <td><button class="eliminar" ng-click="eliminar(emp.documento)">Eliminar</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Nuevo empleado</h3>
+    <form name="formEmpleado" ng-submit="guardar()">
+      <input type="text" ng-model="nuevo.documento" placeholder="Documento">
+      <input type="text" ng-model="nuevo.nombres" placeholder="Nombres">
+      <input type="text" ng-model="nuevo.apellidos" placeholder="Apellidos">
+      <input type="text" ng-model="nuevo.cargo" placeholder="Cargo">
+      <input type="number" ng-model="nuevo.salario" placeholder="Salario">
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/empleado.service.js"></script>
+  <script src="js/empleados.controller.js"></script>
+</body>
+</html>
