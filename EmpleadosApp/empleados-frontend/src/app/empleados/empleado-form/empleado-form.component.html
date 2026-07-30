@@ -1,0 +1,76 @@
+<form class="empleado-form" [formGroup]="form" (ngSubmit)="guardar()">
+
+  <app-alert-banner
+    *ngIf="mensajeError()"
+    tipo="error"
+    [mensaje]="mensajeError()!">
+  </app-alert-banner>
+
+  <app-alert-banner
+    *ngIf="mensajeExito()"
+    tipo="success"
+    [mensaje]="mensajeExito()!">
+  </app-alert-banner>
+
+  <div class="form-grid">
+
+    <div class="field">
+      <label for="documento">Documento</label>
+      <input id="documento" type="number" formControlName="documento" [class.field--invalid]="campoInvalido('documento')">
+      <small class="field-error" *ngIf="campoInvalido('documento')">El documento es obligatorio.</small>
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" [class.field--invalid]="campoInvalido('email')">
+      <small class="field-error" *ngIf="form.get('email')?.hasError('required') && campoInvalido('email')">
+        El email es obligatorio.
+      </small>
+      <small class="field-error" *ngIf="form.get('email')?.hasError('email') && campoInvalido('email')">
+        El email no tiene un formato válido.
+      </small>
+    </div>
+
+    <div class="field">
+      <label for="nombres">Nombres</label>
+      <input id="nombres" type="text" formControlName="nombres" [class.field--invalid]="campoInvalido('nombres')">
+      <small class="field-error" *ngIf="campoInvalido('nombres')">Los nombres son obligatorios.</small>
+    </div>
+
+    <div class="field">
+      <label for="apellidos">Apellidos</label>
+      <input id="apellidos" type="text" formControlName="apellidos" [class.field--invalid]="campoInvalido('apellidos')">
+      <small class="field-error" *ngIf="campoInvalido('apellidos')">Los apellidos son obligatorios.</small>
+    </div>
+
+    <div class="field">
+      <label for="cargo">Cargo</label>
+      <input id="cargo" type="text" formControlName="cargo">
+    </div>
+
+    <div class="field">
+      <label for="departamento">Departamento</label>
+      <input id="departamento" type="text" formControlName="departamento">
+    </div>
+
+    <div class="field">
+      <label for="salario">Salario</label>
+      <input id="salario" type="number" formControlName="salario" [class.field--invalid]="campoInvalido('salario')">
+      <small class="field-error" *ngIf="campoInvalido('salario')">El salario es obligatorio y debe ser mayor a 0.</small>
+    </div>
+
+    <div class="field">
+      <label for="fechaIngreso">Fecha de ingreso</label>
+      <input id="fechaIngreso" type="date" formControlName="fechaIngreso" [class.field--invalid]="campoInvalido('fechaIngreso')">
+      <small class="field-error" *ngIf="campoInvalido('fechaIngreso')">La fecha de ingreso es obligatoria.</small>
+    </div>
+
+  </div>
+
+  <button type="submit" class="btn-primary" [disabled]="guardando()">
+    <app-icon [name]="guardando() ? 'progress_activity' : 'save'" [size]="18"
+              [class.spin]="guardando()"></app-icon>
+    {{ guardando() ? 'Guardando...' : 'Guardar empleado' }}
+  </button>
+
+</form>

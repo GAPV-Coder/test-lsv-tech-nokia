@@ -1,0 +1,38 @@
+<div class="page">
+
+  <header class="page-header">
+    <app-icon name="groups" [size]="28"></app-icon>
+    <div>
+      <h1>Gestión de Empleados</h1>
+      <p>Consulta el listado y registra nuevos empleados.</p>
+    </div>
+  </header>
+
+  <app-alert-banner
+    *ngIf="mensajeExito()"
+    tipo="success"
+    [mensaje]="mensajeExito()!">
+  </app-alert-banner>
+
+  <section class="page-section">
+    <h2 class="section-title">
+      <app-icon name="table_rows" [size]="20"></app-icon>
+      Empleados registrados
+    </h2>
+    <app-empleados-list
+      [empleados]="empleados()"
+      [cargando]="cargando()">
+    </app-empleados-list>
+  </section>
+
+  <section class="page-section">
+    <h2 class="section-title">
+      <app-icon name="person_add" [size]="20"></app-icon>
+      Nuevo empleado
+    </h2>
+    <app-empleado-form
+      (creado)="onEmpleadoCreado($event)">
+    </app-empleado-form>
+  </section>
+
+</div>

@@ -1,0 +1,81 @@
+<div class="list-card">
+
+  <!-- Buscador por email -->
+  <div class="search-bar" *ngIf="!cargando && empleados.length > 0">
+    <label for="busqueda-email" class="sr-only">Buscar por correo electrónico</label>
+    <app-icon name="search" [size]="18" class="search-icon"></app-icon>
+    <input
+      id="busqueda-email"
+      type="text"
+      class="search-input"
+      placeholder="Buscar por correo electrónico..."
+      [value]="terminoBusqueda"
+      (input)="buscar($any($event.target).value)">
+  </div>
+
+  <!-- Estado: cargando -->
+  <div class="state state--loading" *ngIf="cargando">
+    <app-icon name="progress_activity" [size]="28" class="spin"></app-icon>
+    <p>Cargando empleados...</p>
+  </div>
+
+  <!-- Estado: sin datos -->
+  <div class="state state--empty" *ngIf="!cargando && empleados.length === 0">
+    <app-icon name="groups" [size]="32"></app-icon>
+    <p>No hay empleados registrados todavía.</p>
+  </div>
+
+  <!-- Estado: búsqueda sin resultados -->
+  <div class="state state--empty" *ngIf="!cargando && empleados.length > 0 && empleadosFiltrados.length === 0">
+    <app-icon name="search_off" [size]="32"></app-icon>
+    <p>No se encontraron empleados con ese correo.</p>
+  </div>
+
+  <!-- Tabla -->
+  <table class="empleados-table" *ngIf="!cargando && empleadosFiltrados.length > 0">
+    <thead>
+      <tr>
+        <th>Documento</th>
+        <th>Nombre completo</th>
+        <th>Correo electrónico</th>
+        <th>Cargo</th>
+        <th>Departamento</th>
+        <th>Salario</th>
+        <th>Fecha ingreso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of empleadosPagina">
+        <td>{{ emp.documento }}</td>
+        <td>{{ emp.nombres }} {{ emp.apellidos }}</td>
+        <td>{{ emp.email }}</td>
+        <td>{{ emp.cargo || '—' }}</td>
+        <td>{{ emp.departamento || '—' }}</td>
+        <td class="text-right">{{ formatearSalario(emp.salario) }}</td>
+        <td>{{ emp.fechaIngreso | date:'dd/MM/yyyy' }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Paginación -->
+  <div class="pagination" *ngIf="!cargando && empleadosFiltrados.length > 0 && totalPaginas > 1">
+    <button
+      type="button"
+      class="pagination-btn"
+      [disabled]="paginaActual === 1"
+      (click)="irAPagina(paginaActual - 1)">
+      <app-icon name="chevron_left" [size]="18"></app-icon>
+    </button>
+
+    <span class="pagination-info">Página {{ paginaActual }} de {{ totalPaginas }}</span>
+
+    <button
+      type="button"
+      class="pagination-btn"
+      [disabled]="paginaActual === totalPaginas"
+      (click)="irAPagina(paginaActual + 1)">
+      <app-icon name="chevron_right" [size]="18"></app-icon>
+    </button>
+  </div>
+
+</div>

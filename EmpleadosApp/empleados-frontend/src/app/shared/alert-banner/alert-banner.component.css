@@ -1,0 +1,22 @@
+.alert-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  border: 1px solid transparent;
+  margin-bottom: var(--space-4);
+}
+
+.alert-banner--error {
+  background: var(--color-danger-light);
+  color: var(--color-danger);
+  border-color: #fecaca;
+}
+
+.alert-banner--success {
+  background: var(--color-success-light);
+  color: var(--color-success);
+  border-color: #bbf7d0;
+}
