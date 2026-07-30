@@ -1,10 +1,5 @@
 # Frontend — Instrucciones de integración
 
-Este código está pensado para copiarse **encima** de un proyecto creado
-con Angular CLI (ver comando abajo), no para correrse tal cual —
-le faltan `angular.json`, `package.json`, `tsconfig.json`, etc., que
-genera el propio CLI.
-
 ## 1. Crear el proyecto base
 
 ```bash
@@ -14,24 +9,17 @@ cd empleados-frontend
 
 ## 2. Reemplazar/agregar archivos
 
-Copia el contenido de esta carpeta (`frontend/`) sobre la carpeta
-generada por `ng new`, respetando las rutas:
-
 | Archivo de aquí | Va a parar a |
 |---|---|
 | `src/styles.css` | `empleados-frontend/src/styles.css` (reemplaza) |
 | `src/index.html` | `empleados-frontend/src/index.html` (reemplaza) |
 | `src/app/**` | `empleados-frontend/src/app/**` (reemplaza `app.component.ts`, `app.config.ts`, y agrega las carpetas `core/`, `empleados/`, `shared/`) |
 
-Puedes borrar `app.component.html`, `app.component.css` y
-`app.component.spec.ts` que trae el scaffold por defecto — el
-`app.component.ts` que te entrego usa `template` inline y no los necesita.
-
 ## 3. Verificar la URL del backend
 
 En `src/app/core/services/empleado.service.ts`, confirma que `baseUrl`
-apunte a donde corre tu API (`http://localhost:5000/api/empleados` por
-defecto, según lo que ya validamos juntos con Postman).
+apunte a donde corre la API (`http://localhost:5000/api/empleados` por
+defecto).
 
 ## 4. Ejecutar
 
